@@ -19,80 +19,55 @@
 <body>
 <!-- 에디터 영역 -->
 <style>
+:root{
+  --primary-color: #004D45;
+}	
 .thtHPromo{width:100%; margin:0 auto; font-size:13px; color:#000;}
-
-.thtHPromo .h_list{display:flex; flex-flow:row wrap; justify-content:center;}
-.thtHPromo .h_list .hotel{width:42%; margin-top:28px;}
-.thtHPromo .h_list .hotel + .hotel{margin-left:3%;}
-.thtHPromo .h_list .hotel .h_img{height:100px; background-color:black;}
-.thtHPromo .h_list .hotel .h_info{height:100px; border:1px solid #c2c2c2;}
-.thtHPromo .h_list .hotel .h_info li h2{font-size:1.5rem;}
-
-/*
-{display:grid; grid-template-columns: repeat(2, 1fr); gap:30px;}
-
-.thtHPromo .h_list .hotel{padding:0 30px;}
-.thtHPromo .h_list .hotel .h_cont_img{padding-top:15px;}
-.thtHPromo .h_list .hotel .h_info{font-size:14px; background:#fff; padding:30px; border:1px solid #d9d9d9;}
-.thtHPromo .h_list .hotel .h_info h2{font-size:26px; font-weight:500;}		
-.thtHPromo .h_list .hotel .h_info p{line-height:1.5; margin-top:8px;}	
-.thtHPromo .h_list .hotel .h_info .h_reserve{margin-top:4%;}
-.thtHPromo .h_list .hotel .h_info .h_reserve .h_rate_bene{font-size:22px; font-weight:700; color:#004d45; line-height:26px; margin:10px 0 18px 0;}
-.thtHPromo .h_list .hotel .h_info .h_reserve .h_rate_bene > span{font-size:13px; font-weight:300; color:#888; letter-spacing:0;}
-.thtHPromo .h_list .hotel a.h_btn{font-weight:500; color:#000000; line-height:40px; text-align:center; border:1px solid #797979; margin-top:4%; display:block;}
-*/
+.thtHPromo .h_list .hotel{display:flex; flex-wrap:wrap; justify-content:center;}
+.thtHPromo .h_list .hotel .ho_item{width:42%; margin-top:28px; position:relative;}
+.thtHPromo .h_list .hotel .ho_item + .ho_item{margin-left:3%;}
+.thtHPromo .h_list .hotel .ho_item .h_img{display:block; height:100px; background-color:black;}
+.thtHPromo .h_list .hotel .ho_item .h_info{border:1px solid #c2c2c2; font-size:1.1rem; font-weight:500; padding:10px; line-height:1.4;}
+.thtHPromo .h_list .hotel .ho_item .h_info .h_reserve{font-size:1.1rem; font-weight:700; color: var(--primary-color); margin-top:4%;}
+.thtHPromo .h_list .hotel .ho_item .h_reserve span{font-size:0.7rem; font-weight:500; color:#858585; line-height:1.5;}
+.thtHPromo .h_list .hotel .ho_item a{position:absolute; top:0; left:0; right:0; bottom:0; z-index:10; display:block; font-size:0.1rem; text-indent:-999rem; white-space:nowrap;}
 </style>
 <div class="thtHPromo">
 	<!-- pormo_main -->
 	<div class="sec promo_h_visu">
        <img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240327_01.jpg" width="100%" alt="" />
     </div>
-
+	<!-- //pormo_main -->
 	<div class="sec h_list">
-		<div class="hotel">
-			<ul>
-				<li class="h_img">
+		<ul class="hotel">
+			<li class="ho_item">
+				<span class="h_img">
 					이미지 영역
-				</li>
-				<li class="h_info">
-					<h2>호텔이름</h2>
-				</li>
-			</ul>
-		</div>
-		<div class="hotel">2</div>
+				</span>
+				<div class="h_info">
+					호텔 이름
+					<div class="h_reserve">
+						000,000원~<br />
+						<span>(최대 혜택 적용 시)</span>
+					</div>
+				</div>
+				<a href="#">상세보기</a>
+			</li>	
+			<li class="ho_item">
+				<span class="h_img">
+					이미지 영역
+				</span>
+				<div class="h_info">
+					호텔 이름
+					<div class="h_reserve">
+						000,000원~<br />
+						<span>(최대 혜택 적용 시)</span>
+					</div>
+				</div>
+				<a href="#">상세보기</a>
+			</li>
+		</ul>
 	</div>
-
-
-    <!-- //pormo_main 
-    <div class="sec h_list">
-    	<div class="hotel">
-			<ul>
-				<li class="h_cont_img"><img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240327_02.jpg" width="100%" alt="" /></li>
-				<li class="h_info">
-					<h2>호텔현대 바이 라한 목포</h2>
-					<div class="h_reserve">		
-						<div class="h_rate_bene">
-							59,285원~ <br><span>(최대 혜택 적용 시)</span>              
-						</div>
-					</div>
-					<a href="https://www.thehyundaitravel.com/hotel/view/view.do?offerCd=EPS&pptyId=4160409" class="h_btn">예약 바로가기</a>
-				</li>
-				<li class="h_cont_img"><img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240327_03.jpg" width="100%" alt="" /></li>
-				<li class="h_info">
-					<h2>호텔현대 바이 라한 울산</h2>
-					<div class="h_reserve">		
-						<div class="h_rate_bene">
-							66,261원~ <br><span>(최대 혜택 적용 시)</span>              
-						</div>
-					</div>
-					<a href="https://www.thehyundaitravel.com/hotel/view/view.do?offerCd=EPS&pptyId=3892793" class="h_btn">예약 바로가기</a>
-				</li>
-			</ul>
-        </div>
-
-	</div> -->   
-
-
 </div>
 <!-- //에디터 영역 -->
 </body>
