@@ -24,7 +24,8 @@
 }	
 .thtHPromo{width:100%; margin:0 auto; font-size:13px; color:#000;}
 .thtHPromo .h_list .hotel{display:flex; flex-wrap:wrap; justify-content:center;}
-.thtHPromo .h_list .hotel .ho_item{width:42%; margin-top:28px; position:relative;}
+.thtHPromo .h_list .hotel:nth-child(1){margin-top:28px;}
+.thtHPromo .h_list .hotel .ho_item{width:42%; margin-top:3%; position:relative;}
 .thtHPromo .h_list .hotel .ho_item + .ho_item{margin-left:3%;}
 .thtHPromo .h_list .hotel .ho_item .h_img{display:block; height:100px; background-color:black;}
 .thtHPromo .h_list .hotel .ho_item .h_info{border:1px solid #c2c2c2; font-size:1.1rem; font-weight:500; padding:10px; line-height:1.4;}
@@ -39,6 +40,34 @@
     </div>
 	<!-- //pormo_main -->
 	<div class="sec h_list">
+		<ul class="hotel">
+			<li class="ho_item">
+				<span class="h_img">
+					이미지 영역
+				</span>
+				<div class="h_info">
+					호텔 이름
+					<div class="h_reserve">
+						000,000원~<br />
+						<span>(최대 혜택 적용 시)</span>
+					</div>
+				</div>
+				<a href="#">상세보기</a>
+			</li>	
+			<li class="ho_item">
+				<span class="h_img">
+					이미지 영역
+				</span>
+				<div class="h_info">
+					호텔 이름
+					<div class="h_reserve">
+						000,000원~<br />
+						<span>(최대 혜택 적용 시)</span>
+					</div>
+				</div>
+				<a href="#">상세보기</a>
+			</li>
+		</ul>
 		<ul class="hotel">
 			<li class="ho_item">
 				<span class="h_img">
