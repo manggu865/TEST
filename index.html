@@ -19,44 +19,33 @@
 <body>
 <!-- 에디터 영역 -->
 <style>
-:root{
-  --primary-color: #004D45;
-}	
 .thtHPromo{width:100%; margin:0 auto; font-size:13px; color:#000;}
+.thtHPromo .h_list .title_banner{padding:30px 5% 0;} 
 .thtHPromo .h_list .hotel{display:flex; flex-wrap:wrap; justify-content:center;}
-.thtHPromo .h_list .hotel:nth-child(1){margin-top:28px;}
-.thtHPromo .h_list .hotel .ho_item{width:42%; margin-top:3%; position:relative;}
+.thtHPromo .h_list .hotel .ho_item{width:43%; margin-top:3%; position:relative;}
 .thtHPromo .h_list .hotel .ho_item + .ho_item{margin-left:3%;}
+.thtHPromo .h_list .hotel .ho_item:nth-child(odd){margin-left:0%;}
 .thtHPromo .h_list .hotel .ho_item .h_img{display:block; height:100px; background-color:black;}
-.thtHPromo .h_list .hotel .ho_item .h_info{border:1px solid #c2c2c2; font-size:1.1rem; font-weight:500; padding:10px; line-height:1.4;}
-.thtHPromo .h_list .hotel .ho_item .h_info .h_reserve{font-size:1.1rem; font-weight:700; color: var(--primary-color); margin-top:4%;}
-.thtHPromo .h_list .hotel .ho_item .h_reserve span{font-size:0.7rem; font-weight:500; color:#858585; line-height:1.5;}
-.thtHPromo .h_list .hotel .ho_item a{position:absolute; top:0; left:0; right:0; bottom:0; z-index:10; display:block; font-size:0.1rem; text-indent:-999rem; white-space:nowrap;}
+.thtHPromo .h_list .hotel .ho_item .h_info{border:1px solid #c2c2c2; font-size:17px; font-weight:500; padding:10px; line-height:1.4;}
+.thtHPromo .h_list .hotel .ho_item .h_info .h_reserve{font-size:17px; font-weight:700; color:#004D45; margin-top:4%;}
+.thtHPromo .h_list .hotel .ho_item .h_reserve span{font-size:11px; font-weight:500; color:#858585; line-height:1.5;}
+.thtHPromo .h_list .hotel .ho_item a{position:absolute; top:0; left:0; right:0; bottom:0; z-index:10; display:block; font-size:0.1px; text-indent:-999rem; white-space:nowrap;}
 </style>
 <div class="thtHPromo">
 	<!-- pormo_main -->
 	<div class="sec promo_h_visu">
-       <img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240327_01.jpg" width="100%" alt="" />
+       <img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240411_01.jpg" width="100%" alt="" />
     </div>
 	<!-- //pormo_main -->
 	<div class="sec h_list">
+		<div class="title_banner">
+			<img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240411_02.jpg" width="100%" alt="" />
+		</div>
 		<ul class="hotel">
+			<!-- 호텔1 -->
 			<li class="ho_item">
 				<span class="h_img">
-					이미지 영역
-				</span>
-				<div class="h_info">
-					호텔 이름
-					<div class="h_reserve">
-						000,000원~<br />
-						<span>(최대 혜택 적용 시)</span>
-					</div>
-				</div>
-				<a href="#">상세보기</a>
-			</li>	
-			<li class="ho_item">
-				<span class="h_img">
-					이미지 영역
+					<img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240411_03.jpg" width="100%" alt="" />
 				</span>
 				<div class="h_info">
 					호텔 이름
@@ -67,11 +56,10 @@
 				</div>
 				<a href="#">상세보기</a>
 			</li>
-		</ul>
-		<ul class="hotel">
+			<!-- 호텔2 -->
 			<li class="ho_item">
 				<span class="h_img">
-					이미지 영역
+					<img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240411_04.jpg" width="100%" alt="" />
 				</span>
 				<div class="h_info">
 					호텔 이름
@@ -81,10 +69,53 @@
 					</div>
 				</div>
 				<a href="#">상세보기</a>
-			</li>	
+			</li>
+			<!-- 호텔3 -->
 			<li class="ho_item">
 				<span class="h_img">
-					이미지 영역
+					<img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240411_05.jpg" width="100%" alt="" />
+				</span>
+				<div class="h_info">
+					호텔 이름
+					<div class="h_reserve">
+						000,000원~<br />
+						<span>(최대 혜택 적용 시)</span>
+					</div>
+				</div>
+				<a href="#">상세보기</a>
+			</li>
+			<!-- 호텔4 -->
+			<li class="ho_item">
+				<span class="h_img">
+					<img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240411_06.jpg" width="100%" alt="" />
+				</span>
+				<div class="h_info">
+					호텔 이름
+					<div class="h_reserve">
+						000,000원~<br />
+						<span>(최대 혜택 적용 시)</span>
+					</div>
+				</div>
+				<a href="#">상세보기</a>
+			</li>
+			<!-- 호텔5 -->
+			<li class="ho_item">
+				<span class="h_img">
+					<img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240411_07.jpg" width="100%" alt="" />
+				</span>
+				<div class="h_info">
+					호텔 이름
+					<div class="h_reserve">
+						000,000원~<br />
+						<span>(최대 혜택 적용 시)</span>
+					</div>
+				</div>
+				<a href="#">상세보기</a>
+			</li>
+			<!-- 호텔6 -->
+			<li class="ho_item">
+				<span class="h_img">
+					<img src="https://img.thehyundaitravel.com/promotion/hotel/m_promo_h_detail_20240411_08.jpg" width="100%" alt="" />
 				</span>
 				<div class="h_info">
 					호텔 이름
