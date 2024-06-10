@@ -18,12 +18,19 @@
 <body>
 <!-- 에디터 영역 -->
 <style>
+
+/* table common 20240607*/
+.tht_promo table, .tht_promo table th,.tht_promo table td{margin:0; padding:10px 10px;}
+.tht_promo table{width:100%; table-layout:fixed; border-collapse:collapse; text-align:center; font-size:15px;}
+.tht_promo table th{font-weight:bold; background:#F1F1F1; border:1px solid #D9D9D9;}
+.tht_promo table td{border:1px solid #D9D9D9; text-align:left;}
+.tht_promo table .title{font-weight:500;}
 .tht_promo{font-size:13px; color:#000000; line-height:1.3; width:100%; margin:0 auto; padding-bottom:30px; word-break:break-all;}
 .tht_promo .sec + .sec{margin:40px 32px 0 32px;}
-.tht_promo .sec:nth-child(2){margin-top:180px;}
+.tht_promo .sec:nth-child(2){margin-top:245px;}
 .tht_promo .font_b{font-weight:600;}
 .tht_promo .font_l{font-weight:400;}.tht_promo .promo_f_visu{width:100%; position:relative;}
-.tht_promo .promo_f_visu:after{content:''; height:2px; background:#303030; position:absolute; left:32px; right:32px; bottom:-155px;}
+.tht_promo .promo_f_visu:after{content:''; height:2px; background:#303030; position:absolute; left:32px; right:32px; bottom:-220px;}
 .tht_promo .promo_f_visu h1{font-size:27px; font-weight:300; line-height:1.3; padding:32px 32px 0 32px; position:absolute;}
 .tht_promo .promo_f_visu h1 span{display:block;}
 .tht_promo .promo_f_visu img{display:block; margin-bottom:8px;}
@@ -31,22 +38,17 @@
 .tht_promo .promo_f_info dl{font-size:16px; zoom:1;}
 .tht_promo .promo_f_info dl:after{display:block; content:''; clear:both;}
 .tht_promo .promo_f_info dl + dl{margin-top:20px;}
-.tht_promo .promo_f_info dl dt{width:120px; font-weight:500; line-height:2.2; text-align:center; color:#ffffff; background:#3D519E; border-radius:5px; padding:1px 8px; margin-bottom:10px; display:inline-block;}
+.tht_promo .promo_f_info dl dt{width:120px; font-weight:500; line-height:2.2; text-align:center; color:#ffffff; background:#D30D18; border-radius:5px; padding:1px 8px; margin-bottom:10px; display:inline-block;}
 .tht_promo .promo_f_route .cityTit{font-size:18px; font-weight:600; margin-bottom:15px;}
-.tht_promo table, .tht_promo table th,.tht_promo table td{margin:0; padding:10px 10px;}
-.tht_promo table{width:100%; table-layout:fixed; border-collapse:collapse; text-align:center; font-size:15px;}
-.tht_promo table th{font-weight:500; background:#eaeaea; border-bottom:1px solid #c8c8c8;}
-.tht_promo table th.title{background-color:#3D519E; color:#ffffff; border:1px solid #3D519E; border-bottom:1px solid #ffffff;}
-.tht_promo table .title_top{border-top:1px solid #c8c8c8;}
-.tht_promo table .title_bottom{background-color:#3D519E; color:#ffffff; border:1px solid #3D519E; border-bottom:1px solid #3D519E;}
-.tht_promo table td{border-bottom:1px solid #c8c8c8; border-right:1px solid #c8c8c8; text-align:left;}
+.tht_promo .promo_f_route table th{font-weight:bold; background:#F1F1F1; border:1px solid #D9D9D9; border-left:none;}
+.tht_promo .promo_f_route table td{border:1px solid #D9D9D9; text-align:left; border-right:none;}
 .tht_promo .promo_f_city .cityTit{font-size:18px; font-weight:600; margin-bottom:15px;}
-.tht_promo .promo_f_city .cityBanner{width:100%; background:url(https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240527_02.png) no-repeat center center;
-background-size:100%; /*background-size:contain;*/ border-radius:10px; text-align:center; padding:14px 0 18px 0; font-size:16px; font-weight:500; color:#ffffff; margin-bottom:36px; letter-spacing:0;} 
-.tht_promo .promo_f_city .cityBanner span{font-size:14px; font-weight:400; line-height:2; letter-spacing:0;}
+.tht_promo .cityBanner{width:100%; background:url(https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240607_02_3.jpg) no-repeat center center;
+background-size:100%; /*background-size:contain;*/ border-radius:10px; text-align:left; padding:12px 0 12px 18px; font-size:16px; font-weight:bold; color:#121212; margin-bottom:36px; letter-spacing:0;} 
+.tht_promo .cityBanner span{color:#D30D18;}
 .tht_promo .promo_f_city .city{margin-bottom:20px;}		
-.tht_promo .promo_f_city .city .recoTxt{background:#F15921; height:42px; padding:10px; font-size:16px; font-weight:500; text-align:center; color:#fff; border-radius:15px 15px 0px 0px;}
-.tht_promo .promo_f_city .city .recoImg img{width:100%; border-radius:0 0 15px 15px;}
+.tht_promo .promo_f_city .city .recoTxt{background:#D30D18; height:42px; padding:10px; font-size:16px; font-weight:500; text-align:center; color:#fff; border-radius:15px 15px 0px 0px;}
+.tht_promo .promo_f_city .city .recoImg img{width:100%;}
 </style>
 <script>
 	$(document).ready(function() {
@@ -56,17 +58,17 @@ background-size:100%; /*background-size:contain;*/ border-radius:10px; text-alig
 <div class="tht_promo">
 	<!-- pormo_main -->
 	<div class="sec promo_f_visu">
-    	<span class="f_mvisu"><img src="https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240527_01.jpg" alt="" width="100%" /></span>
+    	<span class="f_mvisu"><img src="https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240607_01.jpg" alt="" width="100%" /></span>
         <h1>
 			<span>
-				<img src="https://img.thehyundaitravel.com/promotion/air/promo_f_detail_jejuair_ci.jpg" alt="" width="80%" />
+				<img src="https://img.thehyundaitravel.com/promotion/air/promo_f_detail_eastar_ci.jpg" alt="" width="80%" />
 			</span>
 			<span>
 				<P class="text01"></P>
-				<P class="font_b">방콕IN 치앙마이OUT</P>
+				<P class="font_b">이스타항공 특가 <br /> 완전 럭키비키잖아</P>
 			</span>
             <span class="subtit">
-				제주항공 타고 한 나라 두 도시 여행
+				이스타항공 임박 특가 및 <br /> 신규/재취항 기념 프로모션
 			</span>
         </h1>       
     </div>
@@ -83,119 +85,183 @@ background-size:100%; /*background-size:contain;*/ border-radius:10px; text-alig
         </dl>
     </div>	 
 	<!-- //promo_info  -->
+	<!-- 배너 -->
+	<div class="sec">
+		<div class="cityBanner">
+			<span>
+			이스타항공<br />
+			특가 항공권을 GET!<br />
+			</span>
+			완전 럭키비키잖아 ~<br />
+		</div>
+	</div>
 	<!-- 대상노선 -->
 	<div class="sec promo_f_route">
-		<p class="cityTit"># 할인 대상노선</p>
+		<p class="cityTit"># 대상노선</p>
 		<table>
 			<colgroup>
 				<col width="20%">
-				<col width="20%">
-				<col width="">
+				<col >
 			</colgroup>
 			<thead>
 			</thead>
 			<tbody>
 				<!-- 일본 -->
 				<tr>
-					<th rowspan="3" class="title">일본</th>
-					<th class="title_top">인천발</th>
-					<td class="title_top">도쿄 나리타/오사카/후쿠오카/시즈오카/마쓰야마/나고야/오이타/삿포로/오키나와/히로시마</td>
+					<th>대만</th>
+					<td>타이베이 (인천/청주/제주발), 송산 (김포발)</td>
 				</tr>
 				<tr>
-					<th>김포발</th>
-					<td>오사카</td>
+					<th>동남아</th>
+					<td>다낭, 방콕, 나트랑, 푸꾸옥, 치앙마이</td>
 				</tr>
 				<tr>
-					<th>부산발</th>
-					<td>도쿄 나리타/오사카/후쿠오카</td>
-				</tr>
-				<!-- 중화 -->
-				<tr>
-					<th rowspan="2" class="title">중화</th>
-					<th>인천발</th>
-					<td>타이페이/홍콩/마카오/울란바타르/하얼빈/웨이하이</td>
+					<th>상해</th>
+					<td>푸동</td>
 				</tr>
 				<tr>
-					<th>부산발</th>
-					<td>타이페이/울란바타르</td>
-				</tr>
-				<!-- 동남아 -->
-				<tr>
-					<th rowspan="3" class="title">동남아</th>
-					<th>인천발</th>
-					<td>마닐라/세부/보홀/클락/다낭/나트랑/푸쿠옥/하노이/달랏/비엔티엔/방콕/치앙마이/코타키나발루</td>
-				</tr>
-				<tr>
-					<th>부산발</th>
-					<td>세부/보홀/방콕/싱가폴</td>
-				</tr>
-				<tr>
-					<th>대구발</th>
-					<td>세부</td>
-				</tr>
-				<!-- 대양주 -->
-				<tr>
-					<th rowspan="2" class="title_bottom">대양주</th>
-					<th>인천발</th>
-					<td>괌/사이판</td>
-				</tr>
-				<tr>
-					<th>부산발</th>
-					<td>괌</td>
+					<th>일본</th>
+					<td>오사카, 나리타, 후쿠오카</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 	<!-- //대상노선 -->
-
-    <div class="sec promo_f_city">
-		<div class="cityBanner">
-			<span>제주항공이라면 가능!</span><br />
-			한 도시만 가기에는 아쉬우니까<br />한 나라 두 도시 여행!!
+	<!-- 추천여행지 -->
+	<div class="sec promo_f_city">
+		<div class="cityTit"># 특가 노선 추천 여행지</div>
+		<div class="city">
+			<div class="recoTxt">
+				대만
+			</div>	
+			<div class="recoImg">
+				<img src="https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240607_03.jpg" alt=""  />
+			</div>
+			<table>
+				<colgroup>
+					<col width="42%">
+					<col>
+				</colgroup>
+				<thead></thead>
+				<tbody>
+					<tr>
+						<th colspan="2">이스타항공은 어느 곳에서든 대만으로 출발 가능!</th>
+					</tr>
+					<tr>
+						<td class="title">인천발 (타이페이)</td>
+						<td>~24.10.26 (월/수/금/일)</td>
+					</tr>
+					<tr>
+						<td class="title">청주발 (타이페이)</td>
+						<td>~24.10.26 (DAILY)</td>
+					</tr>
+					<tr>
+						<td class="title">제주발 (타이페이)</td>
+						<td>~24.10.26 (DAILY)</td>
+					</tr>
+					<tr>
+						<td class="title">김포발 (송산)</td>
+						<td>~24.10.26 (화/목/토)</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
-		<div class="cityTit"># THT 추천 여행지</div>
-	    <div class="cityCont">
-			<!-- 혜택 1 -->
-			<div class="city">
-				<div class="recoTxt">
-					새벽을 밝히는 방콕 왓아룬
-				</div>	
-				<div class="recoImg">
-					<img src="https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240527_03.jpg" alt=""  />
-				</div>
+		<div class="city">
+			<div class="recoTxt">
+				상해 푸둥
+			</div>	
+			<div class="recoImg">
+				<img src="https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240607_04.jpg" alt=""  />
 			</div>
-			<!-- //혜택 1 -->
-			<!-- 혜택 2 -->
-			<div class="city">
-				<div class="recoTxt">
-					낮보다 화려한 밤 방콕 루프탑
-				</div>	
-				<div class="recoImg">
-					<img src="https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240527_04.jpg" alt=""  />
-				</div>
+			<table>
+				<colgroup>
+					<col width="42%">
+					<col>
+				</colgroup>
+				<thead></thead>
+				<tbody>
+					<tr>
+						<th colspan="2">동서양의 매력을 동시에 느낄 수 있는 상해</th>
+					</tr>
+					<tr>
+						<td class="title" rowspan="2">인천-푸동</td>
+						<td>ZE871</td>
+					</tr>
+					<tr>
+						<td>22:30-23:30 (06/30~09/01, DAILY)</td>
+					</tr>
+					<tr>
+						<td class="title" rowspan="2">푸동-인천</td>
+						<td>ZE872</td>
+					</tr>
+					<tr>
+						<td class="title">00:30+1-03:30+1 (06/30~09/01, DAILY)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="city">
+			<div class="recoTxt">
+				★ 치앙마이 신규취항 (7/11~) ★
+			</div>	
+			<div class="recoImg">
+				<img src="https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240607_05.jpg" alt=""  />
 			</div>
-			<!-- //혜택 2 -->
-			<!-- 혜택 3 -->
-			<div class="city">
-				<div class="recoTxt">
-					치앙마이의 가로수길 님만해민
-				</div>	
-				<div class="recoImg">
-					<img src="https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240527_05.jpg" alt=""  />
-				</div>
+			<table>
+				<colgroup>
+					<col width="42%">
+					<col>
+				</colgroup>
+				<thead></thead>
+				<tbody>
+					<tr>
+						<td class="title" rowspan="2">인천-치앙마이</td>
+						<td>ZE517</td>
+					</tr>
+					<tr>
+						<td>18:30-22:35</td>
+					</tr>
+					<tr>
+						<td class="title" rowspan="2">치앙마이-인천</td>
+						<td>ZE518</td>
+					</tr>
+					<tr>
+						<td class="title">23:45-07:30+1</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="city">
+			<div class="recoTxt">
+				★ 푸꾸옥 재취항 (7/19~) ★
+			</div>	
+			<div class="recoImg">
+				<img src="https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240607_06.jpg" alt=""  />
 			</div>
-			<!-- //혜택 3 -->
-			<!-- 혜택 4 -->
-			<div class="city">
-				<div class="recoTxt">
-					분위기 깡패 치앙마이 선데이마켓
-				</div>	
-				<div class="recoImg">
-					<img src="https://img.thehyundaitravel.com/promotion/air/m_promo_f_detail_20240527_06.jpg" alt=""  />
-				</div>
-			</div>
-			<!-- //혜택 4 -->
-		</div>	
+			<table>
+				<colgroup>
+					<col width="42%">
+					<col>
+				</colgroup>
+				<thead></thead>
+				<tbody>
+					<tr>
+						<td class="title" rowspan="2">인천-푸꾸옥</td>
+						<td>ZE581</td>
+					</tr>
+					<tr>
+						<td>19:30-00:05+1 (DAILY)</td>
+					</tr>
+					<tr>
+						<td class="title" rowspan="2">푸꾸옥-인천</td>
+						<td>ZE582</td>
+					</tr>
+					<tr>
+						<td class="title">01:00+1-08:40+1 (*수/목 -09:05+1)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </div>
 <!-- //에디터 영역 -->
