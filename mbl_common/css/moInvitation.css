@@ -1,1 +1,239 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,legend,textarea,p,th,td,input,select,textarea,button{margin:0;padding:0}
+html,body{width:100%;height:100%}
+body{font-family:'NotoSansR'; font-size:14px; line-height:1.3; color:#000000;}
+h1,h2,h3,h4,h5,h6{font-family:'NotoSansB'; font-size:14px; line-height:1.3; color:#000000;}
+fieldset,img{border:0 none; vertical-align:top}
+dl,ul,ol,menu,li{list-style:none}
+button{overflow:visible; border:0 none; background-color:transparent; cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+address,caption,em{font-style:normal}
+a{color:#000000; text-decoration:none}
+table{border-collapse:collapse;table-layout:fixed;border-spacing:0}
+hr{display:none}
+select{height:20px;border:1px solid #999;line-height:20px;vertical-align:top}
+
+/*Main*/
+.main{width:100%; height:100vh; background: url(http://img.e-hyundai.com/images/agency/ces2024/mian_bg.png) no-repeat; background-size:cover; position: relative;}
+.main #header{padding:20px 0; background:rgba(255, 255, 255, 0); border:none; position:fixed; left:0; right:0; top:0; z-index:998;transition: padding 0.3s; }
+.main #header:after{display:block; clear:both; content:'';}
+.main #header.fixed{background:rgba(255, 255, 255, 1); padding:20px 0;}
+.main #header h1{font-size:20px; width:171px; line-height:20px; margin-left:20px;}
+.main #menu_trigger .menu_trigger_text{width:22px; height:20px; background:url('http://img.hyundaidreamtour.com/images/agency/ces2024/ico_mainNav.png') no-repeat; display:block; position:absolute; top:0; left:0;}
+#mainCont{position:absolute; top:50%; transform: translateY(-50%); left:12vw; right: 12vw}
+#mainCont .mainTit{color:#ffffff; text-align:center;}
+#mainCont .mainTit h2{font-size:40px; color:#ffffff; margin-bottom:4px}
+#mainCont .cesmenu ul{zoom:1; margin:0 auto; margin-top:4vw;}
+#mainCont .cesmenu ul:after{display:block; clear: both; content: '';}
+#mainCont .cesmenu ul li{float:left; margin-top:4vw;}
+#mainCont .cesmenu ul li:nth-child(2n){float:right;}
+#mainCont .cesmenu ul li a{display:block; width:36vw; height:33vw; background:rgba(255,255,255, 0.9); box-sizing: border-box; border-radius:20px;  position: relative;}
+#mainCont .cesmenu ul li a > div{position:absolute; top:50%; transform:translateY(-50%); width: 100%;}
+#mainCont .cesmenu ul li a .icon{width:50%; margin: 0 auto; display: block;}
+#mainCont .cesmenu ul li a .icon img{width: 100%;}
+#mainCont .cesmenu ul li a .mmTxt{font-family: 'NotoSansB'; font-size:15px; text-align:center; margin-top:6px; display: block;}
+.mainLogo{width:45%; position:absolute; bottom:10vw; left:50%; transform: translateX(-50%)}
+.mainLogo img{width:100%;}
+
+/*Sub*/
+#wrap{position:relative; min-height:100%;}
+#container{background:#ffffff; margin-top: -20px; border-radius:20px; padding-bottom:307px; z-index: 990;}
+#content{margin:0 auto;}
+
+/*header*/
+#header{padding:20px 0; background:rgba(255, 255, 255, 1); border-bottom:1px solid rgba(0, 0, 0, 0.15); position:fixed; left:0; right:0; top:0; z-index:998; -moz-transition: padding 0.3s; -o-transition: padding 0.3s; -webkit-transition: padding 0.3s; transition: padding 0.3s; }
+#header:after{display:block; clear:both; content:'';}
+#header.fixed{background:rgba(255, 255, 255, 1); padding:20px 0;}
+#header h1{font-size:20px; width:171px; line-height:20px; margin-left:20px;}
+#header .home{width:21px; height:20px; position:absolute; right:52px; top:20px;}
+#header .home img{width: 100%;}
+#menu_trigger{width:24px; height:20px; display:block; position:absolute; right:20px; top:20px; white-space:nowrap; overflow:hidden; text-indent:30px; -moz-transition:transform, 0.3s; -o-transition:transform, 0.3s; -webkit-transition:transform, 0.3s; transition:transform, 0.3s;}
+#header.fixed  #menu_trigger{-moz-transform:translateY(-4px); -ms-transform:translateY(-4px); -webkit-transform:translateY(-4px); transform:translateY(-4px);}
+#menu_trigger .menu_trigger_text{width:22px; height:20px; background:url('http://img.hyundaidreamtour.com/images/agency/ces2024/ico_Nav.png') no-repeat; display:block; position:absolute; top:0; left:0;}
+#gnb{width:100%; height:100%; background:#ffffff; border-left:1px solid #d9d9d9; position:fixed; right:0; top:0; visibility:hidden; z-index:999; overflow-y:auto; transform:translateX(100%); transition:all 0.4s ease-in-out; transition:all 0.4s ease-in-out;}
+#gnb .navigation{margin:60px 0 30px 0;}
+#gnb .navigation > ul{border-top:1px solid #D9D9D9;}
+#gnb .navigation > ul > li{border-bottom:1px  solid rgba(0, 0, 0, 0.15);}
+#gnb .navigation > ul > li > a{font-family:'NotoSansB'; font-size:18px; line-height:60px; color:#000000; padding:0 30px; display:block;}
+#gnb .close_btn{width:20px; height:20px; display:block; position:absolute; top:20px; right:20px;}
+#gnb .close_btn img{width: 20px; height: 20px;}
+.menu_open #gnb{transform:translateX(0); visibility: visible;}
+span.d-arrow{width:10px; float:right; position:relative; background:url('http://img.hyundaidreamtour.com/images/agency/ces2024/ico_gnbarrow.png') no-repeat; position:absolute; right:0; top:31px;}
+.d-arrow.d-down{transform:rotateZ(180deg); -webkit-transform:rotateZ(180deg); -moz-transform:rotateZ(180deg); transition:0.360s; -webkit-transition:0.360s; -moz-transition:0.360s;}
+
+/*footer*/
+#footer{font-family:'NotoSansL';font-size:13px; color:#ffffff; background:#595959; position:absolute; left:0; right:0; bottom:0; padding:30px 20px; margin-top:50px;}
+#footer .info, #footer .copyright, #footer .dreamCi{margin-top:14px}
+#footer .info a{color: #ffffff;}
+
+/*common*/
+#content .sect{padding:0 20px; margin-top:40px;}
+#content .sect:nth-child(1){margin-top:20px;}
+#content .sect + .sect{padding-top:40px; border-top:4px solid #F3F3F3}
+#content h3{font-size:18px; margin-bottom:14px}
+#content h4{font-family:'NotoSansM'; font-size:16px; color:#797979; margin:20px 0 8px 0;}
+#content .sect .img{margin-top:6px;}
+#content .sect > .img{margin-top: 14px;}
+#content .sect .arti{margin-top:20px;}
+#content .sect .arti + .arti{border-top:1px dashed #D9D9D9; padding-top:20px;}
+
+.dottedlist li{position:relative; padding-left: 8px;}
+.dottedlist li:before{content: ''; width: 2px; height:2px; background:#666666; border-radius:1px;  position: absolute; top:10px; left:0;}
+.dottedlist li + li {margin-top: 4px;}
+.note{font-size:12px; color:#888888; display:block; margin-top:8px; padding-left:14px; text-indent:-14px;}
+.notered{font-size:12px; color:#E64949; display:block; margin-top:6px; padding-left:14px; text-indent:-14px;}
+.notered02{font-size:12px; color:#E64949; display:block; margin-top:2px; padding-left:14px; text-indent:-14px;}
+.marg_top10{display: block;  margin-top: 10px;}
+.go_url{font-size:13px; color:#797979; text-decoration: underline; display:inline-block; margin-left: 10px;}
+
+/*Thum*/
+.thum{margin-top:10px; width:100%; overflow:hidden; position:relative;}
+.swiper{width:100%; height:100%;}
+.swiper-wrapper{padding-bottom:10px}
+.swiper-slide {display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative;}
+.swiper-slide img {display:block; width:100%; height:100%;}
+.swiper-container-horizontal > .swiper-scrollbar{bottom:10px;}
+
+/*Sub Visual*/
+.subvisual{position:relative; margin-top:60px; z-index: -1;}
+.subvisual img{width:100%; height:32vh; object-fit:cover;}
+
+/*Content Title*/
+#container .contTit{padding:20px 20px 0px 20px;}
+#container .contTit h2{font-size:20px; margin-bottom:6px;}
+#container .contTit span{font-size:15px; color:#606060;}
+
+/*Content Tab*/
+#container .tab{width:100%; box-sizing:border-box; background:#ffffff; padding:14px 20px;}
+#container .tab a{font-size:14px; line-height:28px; color:#ffffff; background:#004d45; border-radius:18px; padding:0 12px 2px 12px; display:inline-block; margin-bottom:3px;}
+#container .tab a + a{margin-left:2px;}
+#container .tab a:nth-child(4n){margin:4px 0 0 0;}
+
+/*CES 소개*/
+.cseinfo .sect img + img{margin-top:10px;}
+.cseinfo .sect .area{color:#ffffff; background: url(http://img.hyundaidreamtour.com/images/agency/ces2024/ces2024_sub01_img01.png) no-repeat, #004D45; background-size:100% 100%; padding:18px; border-radius:12px 12px 0 0;}
+.cseinfo .sect .area .title{font-size:15px; font-weight:bold; padding-bottom:5px;}
+.cseinfo .sect .area a.btn_borderw{color:#ffffff; font-size:13px; padding:6px 10px; margin-top:15px; border:1px solid #ffffff; border-radius:6px; display: inline-block}
+.cseinfo .sect .guide{border:1px solid #cccccc; border-radius:12px; padding:0 15px 15px 15px; margin-top:10px; zoom:1;}
+.cseinfo .sect .guide h4{width:100%; float:left; zoom:1;}
+.cseinfo .sect .guide h4:after{display: block; clear: both; content: '';}
+.cseinfo .sect .guide h4 > span{width:30%; float:right;}
+.cseinfo .sect .guide a.btn_borderb{color:#000000; font-size:13px; padding:6px 10px; margin-top:15px; border:1px solid #000000; border-radius:6px; display: inline-block}
+.cseinfo .sect .guide a.btn_borderb{color:#000000; font-size:13px; padding:6px 10px; margin-top:15px; border:1px solid #000000; border-radius:6px; display: inline-block}
+
+/*츨입국 안내*/
+.immigration .info{padding:15px; margin-top:10px; background-size:15px 15px; border-radius:14px; background:#F7F7F7; box-sizing:border-box; color:#E64949; font-size:12px;}
+.immigration .esta p span{padding-left:12px;}
+.immigration .esta p span.note{color:#e64949; font-size:13px;}
+.immigration .esta p.note{color:#e64949; font-size:13px; padding:10px 0 12px 0}
+.immigration .esta p.btn{border:1px solid #000000; border-radius:6px; padding:10px; text-align:center;}
+.immigration .immi_danger li{background:#f7f7f7; border-radius:12px;}
+.immigration .immi_danger li + li{margin-top:6px;}
+.immigration .immi_danger li img{padding:10px 0 10px 0;}
+.immigration .immi_danger li p{display:inline-block; padding:35px 0 0 8px;}
+.immigration .immi_danger li p.two_line{display:inline-block; padding:27px 0 0 8px;}
+.immigration .immi_danger li p.three_line{display:inline-block; padding:17px 0 0 8px;}
+.immigration .immDocu .docu{width:100%; zoom:1;}
+.immigration .immDocu .docu:after{display: block; clear: both; content: '';}
+.immigration .immDocu .docu li{float:left; width:32%; background:#f7f7f7; text-align:center; border-radius:12px; padding:20px 10px; box-sizing: border-box;}
+.immigration .immDocu .docu li + li{margin-left:2%;}
+.immigration .immDocu .docu li p.title{color:#004d45; font-size:15px; font-weight:bold; padding-top:8px;}
+.immigration .immDocu .docu li p.sub_text{color:#666666; font-size:14px; padding-top:4px;}
+.immigration .immDocu span{display:inline-block; color:#666666; font-size:13px; padding-top:8px;}
+.immigration .usa .prohibit{}
+.immigration .usa .prohibit li{background:#F7F7F7; border-radius:12px; zoom:1; position: relative;}
+.immigration .usa .prohibit li:after{display: block; clear: both; content: '';}
+.immigration .usa .prohibit li + li{margin-top: 6px;}
+.immigration .usa .prohibit li span{float:left; display: inline-block;}
+.immigration .usa .prohibit li span.icoItem{width: 70px; height: 70px;}
+.immigration .usa .prohibit li span:last-child{width: calc(100% - 80px); padding-left: 10px; position:absolute; top:50%; transform: translateY(-50%);}
+.immigration .usa table, .immigration .usa table th, .immigration .usa table td{margin:0; padding:0; border:0 none; text-align:left;}
+.immigration .usa table {width:100%; table-layout:fixed; border-collapse:collapse; text-align:center; margin-bottom:4px;}
+.immigration .usa table col.title{width:27%;}
+.immigration .usa table col.blank{width:3%;}
+.immigration .usa table col.text{width:70%;}
+.immigration .usa table th{color:#004d45; border-top:1px solid #004d45; padding-right:25px;}
+.immigration .usa table td{border-top:1px solid #cccccc; padding:10px 0;}
+.immigration .usa table td.blank{border:0px;}
+.immigration .usa table th.line_two{border-top:2px solid #004d45;}
+.immigration .usa table td.line_two{border-top:2px solid #cccccc;}
+.immigration .usa table th.line_bottm{border-top:1px solid #004d45; border-bottom:1px solid #004d45;}
+.immigration .usa table td.line_bottm{border-top:2px solid #cccccc; border-bottom:1px solid #cccccc;}
+
+/*라운지 안내*/
+.hotel .info .time p{float:left; width:49%; background:#f7f7f7; padding:20px; margin:5px 0 20px 0;; text-align:center; border-radius:12px; color:#303030; font-weight:300; box-sizing:border-box;}
+.hotel .info .time p + p{margin-left:2%;}
+.hotel .info .time p span{color:#000000; font-weight:bold;}
+.hotel .proce table, .immi_proce table th,.immi_proce table td{margin:0; padding:0; border:0 none;}
+.hotel .proce table {width:100%; table-layout:fixed; border-collapse:collapse; margin-bottom:4px; text-align:left;}
+.hotel .proce table col.title{width:25%;}
+.hotel .proce table col.blank{width:3%;}
+.hotel .proce table col.text{width:72%;}
+.hotel .proce table th{color:#004d45; border-top:1px solid #004d45; padding-right:25px;}
+.hotel .proce table td{border-top:1px solid #cccccc; padding:10px 0;}
+.hotel .proce table td.blank{border:0px;}
+.hotel .proce table th.line_two{border-top:2px solid #004d45;}
+.hotel .proce table td.line_two{border-top:2px solid #cccccc;}
+.hotel .proce table th.line_bottm{border-top:1px solid #004d45; border-bottom:1px solid #004d45;}
+.hotel .proce table td.line_bottm{border-top:2px solid #cccccc; border-bottom:1px solid #cccccc;}
+.hotel .phone_call{padding-top:20px;}
+.hotel .phone_call .number{width:100%; zoom:1;}
+.hotel .phone_call .number:after{display: block; clear: both; content: '';}
+.hotel .phone_call .number li{float:left; width:49%; border:1px solid #cccccc; border-radius:12px; padding:15px; line-height:25px; box-sizing:border-box;}
+.hotel .phone_call .number li + li{margin-left:2%;}
+.hotel .phone_call .number .title{font-family:'NotoSansM'; font-size:16px; color:#000000; }
+.hotel .phone_call .number p{color:#303030;}
+
+/*호텔이용안내*/
+.hotel .hotel_intro ul{width:100%; zoom:1;}
+.hotel .hotel_intro ul:after{display: block; clear: both; content: '';}
+.hotel .hotel_intro li{float:left; width:50%; box-sizing:border-box;}
+.hotel .hotel_intro .time li{float:left; width:49%; border:1px solid #cccccc; padding:20px; margin-top:15px; text-align:center; border-radius:12px; color:#303030; font-weight:300;  box-sizing:border-box;}
+.hotel .hotel_intro .time li + li{margin-left:2%;}
+.hotel .hotel_intro .time span{color:#000000; font-weight:bold;}
+.hotel .hotel_intro .notered{font-size:12px; color:#E64949; display:block; margin-top:10px; padding-left:14px; text-indent:-14px;}
+.hotel .labelst{margin:10px 0 0 10px;}
+.hotel .labelst dt{color:#ffffff; line-height:1.4; display:inline-block; background: #797979; padding:4px 10px; border-radius:4px; margin-bottom: 3px;}
+.hotel .info_use .text_box{width:14%; text-align:center; background:#797979; color:#ffffff; padding:3px 5px 5px 5px; border-radius:6px; margin-top: 10px;}
+.hotel .hotel_lounge{border:1px solid #cccccc; border-radius:12px; zoom:1; margin-top:15px;}
+.hotel .hotel_lounge:after{display: block; clear: both; content: '';}
+.hotel .hotel_lounge h4{display:inline-block;}
+.hotel .hotel_lounge p span{padding-left:12px;}
+.hotel .hotel_lounge .info{margin:15px;}
+.hotel .hotel_lounge .info .time li{float:left; width:36%; background:#f7f7f7; padding:20px; margin-top:5px; text-align:center; border-radius:12px; color:#303030; font-weight:300;}
+
+/*현지정보*/
+.lasvegas .local_notice li{background: #F1F1F1;border-radius:8px; padding:12px;}
+.lasvegas .local_notice ul li + li{margin-top: 10px;}
+
+/*안전관리*/
+.safety .sect .hospital{margin-top:14px; zoom:1;}
+.safety .sect .hospital:after{display: block; clear:both; content: '';}
+.safety .sect .hospital .hosImg{float: left; width: 30%;}
+.safety .sect .hospital .hosInfo{float: right; width: 66%;}
+.safety .sect .hospital .hosInfo > P {font-family:'NotoSansM'; font-size:15px; color:#797979; margin:0 0 10px 0;}
+.safety .sect .notered{font-size:12px; color:#E64949; display:block; margin-top:6px; padding-left:14px; text-indent:-14px;}
+
+/*교통수단*/
+/*
+.vehi .info{padding:12px 20px 10px 50px; margin-top: 30px; background:url(http://img.hyundaidreamtour.com/images/agency/ces2024/ces2024_sub06_icon01.png)no-repeat 16px 10px, #F7F7F7; background-size:26px 26px;;  border-radius: 14px; box-sizing:border-box;}*/
+.vehi .info{padding:20px; margin-top:30px; background-size:26px 26px; border-radius:14px; background:#F7F7F7; box-sizing:border-box;}
+.vehi .sect .info p{font-family: 'NotoSansM'; font-size:16px; margin-bottom:6px; color:#797979; font-weight:bold;}
+.vehi .sect .info .note{font-size:12px; color:#888888; display:block;}
+.vehi .sect .txtGreen{color:#66A443;}
+.vehi .sect .txtBlue{color:#177CBC;}
+.vehi .sect .txtPurple{color:#793376;}
+.vehi .sect .txtRed{color:#E64949;}
+.vehi .sect .arti dl{width: 100%; margin-top:6px; zoom:1;}
+.vehi .sect .arti dl:after{display: block; clear: both; content: '';}
+.vehi .sect .arti dl dt{font-family: 'NotoSansM'; color:#ffffff; text-align:center; width:76px; background:#797979; border-radius:4px; padding:4px 0; float:left;}
+.vehi .sect .arti dl dd{width:calc(100% - 86px); margin:4px 0 0 10px; float:left;}
+.vehi .sect .arti .route{position:relative; padding-left:18px;}
+.vehi .sect .arti .route:before{content:''; width: 12px; height:12px; position:absolute; top:4px; left:0px; border-radius: 4px;}
+.vehi .sect .arti .route.txtGreen:before{background:#66A443;}
+.vehi .sect .arti .route.txtBlue:before{background:#177CBC;}
+.vehi .sect .arti .route.txtPurple:before{background:#793376;}
+.vehi .sect .arti .route.txtRed:before{background:#E64949;}
+
 
